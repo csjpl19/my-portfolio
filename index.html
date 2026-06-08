@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Carl Stephen Junior PIERRE-LOUIS" />
+    <meta
+      name="description"
+      content="Portfolio de Carl Stephen Junior PIERRE-LOUIS, ingénieur en informatique et architecte logiciel."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Carl Stephen Junior PIERRE-LOUIS - Portfolio" />
+    <meta
+      property="og:description"
+      content="Solutions web, applications sur mesure, APIs et architecture logicielle."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Carl Stephen Junior PIERRE-LOUIS - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <svg class="svg-sprite" aria-hidden="true" focusable="false">
+      <symbol id="icon-mail" viewBox="0 0 24 24">
+        <path d="M4 4h16v16H4z" />
+        <path d="m4 7 8 6 8-6" />
+      </symbol>
+      <symbol id="icon-phone-chat" viewBox="0 0 24 24">
+        <path d="M5 19.2 6.2 15A8 8 0 1 1 9 17.8Z" />
+        <path d="M9.5 8.8c.2 3 2.2 5 5.2 5.7l1.3-1.3-2-1-1 .6c-1.1-.6-1.9-1.4-2.5-2.5l.6-1-1-2Z" />
+      </symbol>
+      <symbol id="icon-github" viewBox="0 0 24 24">
+        <path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.5 2.4 1.1 3 .8.1-.7.4-1.1.7-1.3-2.2-.3-4.5-1.1-4.5-5A3.9 3.9 0 0 1 7 8.9c-.1-.3-.5-1.3.1-2.7 0 0 .9-.3 2.8 1.1A9.5 9.5 0 0 1 12 7c.7 0 1.4.1 2.1.3 1.9-1.4 2.8-1.1 2.8-1.1.6 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1.1 2.7c0 3.9-2.3 4.7-4.5 5 .4.3.7 1 .7 2v2.4c0 .3.2.6.7.5A10 10 0 0 0 12 2Z" />
+      </symbol>
+      <symbol id="icon-instagram" viewBox="0 0 24 24">
+        <rect x="3" y="3" width="18" height="18" rx="5" />
+        <circle cx="12" cy="12" r="3.5" />
+        <path d="M17.4 6.6h.01" />
+      </symbol>
+      <symbol id="icon-facebook" viewBox="0 0 24 24">
+        <path d="M14 8h3V4h-3c-3.2 0-5 1.9-5 5v3H6v4h3v6h4v-6h3.2l.8-4h-4V9.3c0-.9.4-1.3 1-1.3Z" />
+      </symbol>
+      <symbol id="icon-external" viewBox="0 0 24 24">
+        <path d="M14 4h6v6" />
+        <path d="m10 14 10-10" />
+        <path d="M20 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h5" />
+      </symbol>
+      <symbol id="icon-code" viewBox="0 0 24 24">
+        <path d="m16 18 6-6-6-6" />
+        <path d="m8 6-6 6 6 6" />
+      </symbol>
+      <symbol id="icon-briefcase" viewBox="0 0 24 24">
+        <path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2" />
+        <rect x="3" y="7" width="18" height="13" rx="2" />
+        <path d="M3 12h18" />
+      </symbol>
+      <symbol id="icon-award" viewBox="0 0 24 24">
+        <circle cx="12" cy="8" r="5" />
+        <path d="m8.5 12.5-1 8 4.5-2.4 4.5 2.4-1-8" />
+      </symbol>
+      <symbol id="icon-graduation" viewBox="0 0 24 24">
+        <path d="m22 10-10-5-10 5 10 5 10-5Z" />
+        <path d="M6 12v5c3.5 2 8.5 2 12 0v-5" />
+      </symbol>
+      <symbol id="icon-layout" viewBox="0 0 24 24">
+        <rect x="3" y="4" width="18" height="16" rx="2" />
+        <path d="M3 9h18" />
+        <path d="M9 20V9" />
+      </symbol>
+      <symbol id="icon-server" viewBox="0 0 24 24">
+        <rect x="3" y="4" width="18" height="7" rx="2" />
+        <rect x="3" y="13" width="18" height="7" rx="2" />
+        <path d="M7 8h.01M7 17h.01" />
+      </symbol>
+      <symbol id="icon-gauge" viewBox="0 0 24 24">
+        <path d="M4 14a8 8 0 1 1 16 0" />
+        <path d="M12 14 16 9" />
+        <path d="M7 19h10" />
+      </symbol>
+      <symbol id="icon-spark" viewBox="0 0 24 24">
+        <path d="m12 2 1.7 6.1L20 10l-6.3 1.9L12 18l-1.7-6.1L4 10l6.3-1.9Z" />
+        <path d="m19 16 .8 2.7 2.2.8-2.2.8L19 23l-.8-2.7-2.2-.8 2.2-.8Z" />
+      </symbol>
+    </svg>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="page-shell">
+      <header class="site-header" data-header>
+        <nav class="nav container" aria-label="Navigation principale">
+          <a class="brand" href="#hero" aria-label="Retour a l'accueil">
+            <span class="brand-photo">
+              <img src="assets/profile-placeholder.jpeg" alt="Photo professionnelle de Carl" />
+            </span>
+            <span class="brand-name">stephen<span>.dev</span></span>
+          </a>
+
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+            <span class="sr-only">Ouvrir le menu</span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <ul class="nav-links" id="nav-menu">
+            <li><a href="#a-propos">À propos</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#parcours">Parcours</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+          <a class="nav-cta" href="#contact">Discutons</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero" id="hero">
+          <canvas class="particles" data-particles aria-hidden="true"></canvas>
+          <div class="container hero-grid">
+            <div class="hero-content">
+              <p class="eyebrow reveal">
+                <span class="status-dot" aria-hidden="true"></span>
+                Disponible pour de nouveaux projets
+              </p>
+              <h1 class="reveal">
+                Carl Stephen Junior
+                <span>PIERRE LOUIS</span>
+              </h1>
+              <p class="hero-role reveal">
+                Ingénieur en informatique <span>/</span> Architecte logiciel <span>/</span> Analyste programmeur
+              </p>
+              <p class="hero-copy reveal">
+                Je conçois des solutions numériques performantes, élégantes et évolutives:
+                applications web, APIs, outils métier et interfaces modernes.
+              </p>
+              <div class="hero-actions reveal">
+                <a class="btn btn-primary" href="#projets">
+                  Voir mes projets
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 12h14m-6-6 6 6-6 6" />
+                  </svg>
+                </a>
+                <a class="btn btn-ghost" href="#contact">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4 4h16v16H4z" />
+                    <path d="m4 7 8 6 8-6" />
+                  </svg>
+                  Me contacter
+                </a>
+              </div>
+            </div>
+
+            <div class="hero-portrait reveal">
+              <div class="portrait-ring">
+                <img src="assets/profile-placeholder.jpeg" alt="Portrait professionnel de Carl" />
+              </div>
+              <div class="availability-card">
+                <span>Réponse moyenne</span>
+                <strong>48h</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="a-propos">
+          <div class="container split">
+            <div>
+              <p class="section-kicker reveal">À propos</p>
+              <h2 class="section-title reveal">
+                Passionné par le code et l'élégance technique.
+              </h2>
+            </div>
+            <div class="section-text reveal">
+              <p>
+                Ingénieur en informatique, je conçois et développe des applications web et
+                logicielles modernes. Mon terrain de jeu: l'architecture logicielle, la résolution
+                de problèmes complexes et l'intégration de technologies récentes.
+              </p>
+              <p>
+                J'aime transformer une idée floue en produit lisible, rapide à étendre et agréable
+                à utiliser. Chaque mission avance avec une exigence simple: clarté, performance et
+                impact concret.
+              </p>
+              <div class="stats">
+                <article>
+                  <strong>4+</strong>
+                  <span>Années d'expérience</span>
+                </article>
+                <article>
+                  <strong>10+</strong>
+                  <span>Projets livrés</span>
+                </article>
+                <article>
+                  <strong>15+</strong>
+                  <span>Technologies maîtrisées</span>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div class="container pillars">
+            <article class="feature-card reveal">
+              <span class="icon-badge code-icon" aria-hidden="true"></span>
+              <h3>Développement</h3>
+              <p>Code propre, maintenable et pensé pour passer du prototype au produit en ligne.</p>
+            </article>
+            <article class="feature-card reveal">
+              <span class="icon-badge layers-icon" aria-hidden="true"></span>
+              <h3>Architecture</h3>
+              <p>Systèmes modulaires, robustes et faciles à faire évoluer sur la durée.</p>
+            </article>
+            <article class="feature-card reveal">
+              <span class="icon-badge idea-icon" aria-hidden="true"></span>
+              <h3>Resolution</h3>
+              <p>Analyse claire des problèmes complexes, décisions pragmatiques et résultat.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section muted-band" id="competences">
+          <div class="container section-heading centered">
+            <p class="section-kicker reveal">Compétences</p>
+            <h2 class="section-title reveal">Une stack complète, du pixel au serveur.</h2>
+          </div>
+
+          <div class="container skills-grid">
+            <article class="skill-card reveal">
+              <div class="skill-head">
+                <span class="skill-icon monitor-icon" aria-hidden="true"></span>
+                <h3>Frontend</h3>
+              </div>
+              <ul>
+                <li><span>HTML / CSS</span><strong>95%</strong><i style="--level: 95%"></i></li>
+                <li><span>JavaScript</span><strong>92%</strong><i style="--level: 92%"></i></li>
+                <li><span>React</span><strong>90%</strong><i style="--level: 90%"></i></li>
+              </ul>
+            </article>
+            <article class="skill-card reveal">
+              <div class="skill-head">
+                <span class="skill-icon server-icon" aria-hidden="true"></span>
+                <h3>Backend</h3>
+              </div>
+              <ul>
+                <li><span>Spring Boot</span><strong>88%</strong><i style="--level: 88%"></i></li>
+                <li><span>PHP</span><strong>80%</strong><i style="--level: 80%"></i></li>
+                <li><span>Python</span><strong>78%</strong><i style="--level: 78%"></i></li>
+                <li><span>Java</span><strong>72%</strong><i style="--level: 72%"></i></li>
+              </ul>
+            </article>
+            <article class="skill-card reveal">
+              <div class="skill-head">
+                <span class="skill-icon database-icon" aria-hidden="true"></span>
+                <h3>Bases de données</h3>
+              </div>
+              <ul>
+                <li><span>MySQL</span><strong>88%</strong><i style="--level: 88%"></i></li>
+                <li><span>PostgreSQL</span><strong>85%</strong><i style="--level: 85%"></i></li>
+                <li><span>Oracle</span><strong>78%</strong><i style="--level: 78%"></i></li>
+              </ul>
+            </article>
+            <article class="skill-card reveal">
+              <div class="skill-head">
+                <span class="skill-icon wrench-icon" aria-hidden="true"></span>
+                <h3>Outils & DevOps</h3>
+              </div>
+              <ul>
+                <li><span>Git</span><strong>92%</strong><i style="--level: 92%"></i></li>
+                <li><span>Docker</span><strong>82%</strong><i style="--level: 82%"></i></li>
+                <li><span>Linux</span><strong>85%</strong><i style="--level: 85%"></i></li>
+                <li><span>API REST</span><strong>90%</strong><i style="--level: 90%"></i></li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="projets">
+          <div class="container section-heading project-heading">
+            <div>
+              <p class="section-kicker reveal">Projets</p>
+              <h2 class="section-title reveal">Quelques réalisations sélectionnées.</h2>
+            </div>
+            <p class="section-note reveal">
+              Un échantillon de travaux récents: performance, design, architecture ou expérience
+              développeur.
+            </p>
+          </div>
+
+          <div class="container projects-grid">
+            <article class="project-card reveal">
+              <div class="project-visual data-visual" data-project-carousel>
+                <div class="project-slides">
+                  <!-- Ajoute jusqu'a 3 images: <img src="assets/projects/biblio-1.jpg" alt="Capture du projet Bibliotheques"> -->
+                   <img src="assets/biblio-1.png" alt="Capture du projet Bibliotheques" />
+                   <img src="assets/biblio-2.png" alt="Capture du projet Bibliotheques" />
+                   <img src="assets/biblio-3.png" alt="Capture du projet Bibliotheques" />
+                </div>
+                <span class="project-number">01</span>
+                <div class="project-dots" aria-hidden="true"></div>
+              </div>
+              <h3>Plateforme SaaS de Bibliotheques</h3>
+              <p>Gestion integrale des ressources bibliothécaires.</p>
+              <ul><li>Spring Boot</li><li>Thymeleaf</li><li>PostgreSQL</li><li>Docker</li></ul>
+              <div class="project-links">
+                <a href="https://biblio-te.lovable.app/" aria-label="Demo du projet SaaS">
+                  <svg class="inline-icon" aria-hidden="true"><use href="#icon-external"></use></svg>
+                  Demo
+                </a>
+                <a href="" aria-label="Code du projet SaaS">
+                  <svg class="inline-icon" aria-hidden="true"><use href="#icon-code"></use></svg>
+                  Code
+                </a>
+              </div>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-visual api-visual" data-project-carousel>
+                <div class="project-slides">
+                  <!-- Ajoute jusqu'a 3 images: <img src="assets/projects/ltc-1.jpg" alt="Capture du projet LTC"> -->
+                   <img src="assets/ltc-1.png" alt="Capture du projet LTC" />
+                    <img src="assets/ltc-2.png" alt="Capture du projet LTC" />
+                    <img src="assets/ltc-3.png" alt="Capture du projet LTC" />
+                </div>
+                <span class="project-number">02</span>
+                <div class="project-dots" aria-hidden="true"></div>
+              </div>
+              <h3>App web entre amoureux/crush</h3>
+              <p>Recevoir des invitations, accepter ou ajouter un partenaire et échanger des messages en toute sécurité avec lui.</p>
+              <ul><li>Spring Boot</li><li>PostgreSQL</li><li>OAuth2 Google</li><li>PWA</li></ul>
+              <div class="project-links">
+                <a href="https://ltc-app.onrender.com" target="_blank" rel="noreferrer">
+                  <svg class="inline-icon" aria-hidden="true"><use href="#icon-external"></use></svg>
+                  Demo
+                </a>
+                <a href="#">
+                  <svg class="inline-icon" aria-hidden="true"><use href="#icon-code"></use></svg>
+                  Code
+                </a>
+              </div>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-visual pwa-visual" data-project-carousel>
+                <div class="project-slides">
+                  <!-- Ajoute jusqu'a 3 images: <img src="assets/projects/converter-1.jpg" alt="Capture du convertisseur"> -->
+                   <img src="assets/conv-1.png" alt="Capture du convertisseur" />
+                    <img src="assets/conv-2.png" alt="Capture du convertisseur" />
+                    <img src="assets/conv-3.png" alt="Capture du convertisseur" />
+                </div>
+                <span class="project-number">03</span>
+                <div class="project-dots" aria-hidden="true"></div>
+              </div>
+              <h3>App web de conversion de fichiers</h3>
+              <p>Convertissez vos fichiers dans le format les plus utilises gratuitement.</p>
+              <ul><li>JavaScript</li><li>Spring Boot</li></ul>
+              <div class="project-links">
+                <a href="https://z-pdf-springboot.onrender.com" target="_blank" rel="noreferrer">
+                  <svg class="inline-icon" aria-hidden="true"><use href="#icon-external"></use></svg>
+                  Demo
+                </a>
+                <a href="#">
+                  <svg class="inline-icon" aria-hidden="true"><use href="#icon-code"></use></svg>
+                  Code
+                </a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section muted-band" id="parcours">
+          <div class="container section-heading centered">
+            <p class="section-kicker reveal">Parcours</p>
+            <h2 class="section-title reveal">Un chemin construit avec rigueur.</h2>
+          </div>
+
+          <ol class="container timeline">
+            <li class="reveal">
+              <span class="timeline-icon" aria-hidden="true">
+                <svg><use href="#icon-briefcase"></use></svg>
+              </span>
+              <div class="timeline-content">
+                <span class="timeline-year">Aujourd'hui</span>
+                <h3>Développeur en herbe</h3>
+                <p>Freelance</p>
+                <small>Applications web sur mesure et conseil en architecture pour startups.</small>
+              </div>
+            </li>
+            <li class="reveal">
+              <span class="timeline-icon" aria-hidden="true">
+                <svg><use href="#icon-award"></use></svg>
+              </span>
+              <div class="timeline-content">
+                <span class="timeline-year">2025 - 2026</span>
+                <h3>Certification CISCO</h3>
+                <p>Frontend</p>
+                <small>HTML, CSS, JS.</small>
+              </div>
+            </li>
+            <li class="reveal">
+              <span class="timeline-icon" aria-hidden="true">
+                <svg><use href="#icon-code"></use></svg>
+              </span>
+              <div class="timeline-content">
+                <span class="timeline-year">2024 - 2026</span>
+                <h3>Développeur Full-Stack Junior</h3>
+                <p>INUKA.dev</p>
+                <small>Livraison de plateformes web complètes pour des clients exigeants.</small>
+              </div>
+            </li>
+            <li class="reveal">
+              <span class="timeline-icon" aria-hidden="true">
+                <svg><use href="#icon-graduation"></use></svg>
+              </span>
+              <div class="timeline-content">
+                <span class="timeline-year">2023 - 2027</span>
+                <h3>Licence en Sciences Informatiques</h3>
+                <p>Université INUKA</p>
+                <small>Architecture logicielle, systèmes distribués et qualité du code.</small>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <section class="section" id="services">
+          <div class="container section-heading centered">
+            <p class="section-kicker reveal">Services</p>
+            <h2 class="section-title reveal">Ce que je peux apporter à votre projet.</h2>
+          </div>
+
+          <div class="container services-grid">
+            <article class="service-card reveal">
+              <div class="service-top">
+                <span class="service-number">01</span>
+              </div>
+              <h3>Développement web</h3>
+              <p>Sites et applications modernes, rapides, accessibles et pensés pour durer.</p>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-top">
+                <span class="service-number">02</span>
+              </div>
+              <h3>Applications sur mesure</h3>
+              <p>Logiciels métier conçus autour de vos processus, pas l'inverse.</p>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-top">
+                <span class="service-number">03</span>
+              </div>
+              <h3>APIs & backend</h3>
+              <p>APIs REST robustes, sécurisées, documentées et faciles à intégrer.</p>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-top">
+                <span class="service-number">04</span>
+              </div>
+              <h3>Optimisation & maintenance</h3>
+              <p>Audit de performance, refactoring, mises à jour et support technique.</p>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-top">
+                <span class="service-number">05</span>
+              </div>
+              <h3>UI/UX technique</h3>
+              <p>Interfaces soignées, micro-interactions et accessibilité au coeur du design.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+          <div class="container contact-grid">
+            <div class="contact-copy">
+              <p class="section-kicker reveal">Contact</p>
+              <h2 class="section-title reveal">
+                Parlons de votre <span>projet.</span>
+              </h2>
+              <p class="section-text reveal">
+                Une idée, une mission, une question technique? Envoyez les détails importants et je
+                reviens vers vous rapidement.
+              </p>
+
+              <div class="contact-cards reveal">
+                <a data-email-link href="mailto:spierrelouis45@gmail.com">
+                  <span class="contact-icon" aria-hidden="true">
+                    <svg><use href="#icon-mail"></use></svg>
+                  </span>
+                  <span class="contact-info">
+                    <span>Email</span>
+                    <strong data-email-label>spierrelouis45@gmail.com</strong>
+                  </span>
+                </a>
+                <a href="https://wa.me/50934976307" target="_blank" rel="noreferrer">
+                  <span class="contact-icon" aria-hidden="true">
+                    <svg><use href="#icon-phone-chat"></use></svg>
+                  </span>
+                  <span class="contact-info">
+                    <span>WhatsApp</span>
+                    <strong>+509 3497 6307</strong>
+                  </span>
+                </a>
+                <a href="https://github.com/csjpl19" target="_blank" rel="noreferrer">
+                  <span class="contact-icon" aria-hidden="true">
+                    <svg><use href="#icon-github"></use></svg>
+                  </span>
+                  <span class="contact-info">
+                    <span>GitHub</span>
+                    <strong>@csjpl19</strong>
+                  </span>
+                </a>
+                <a href="https://www.instagram.com/csj.pl" target="_blank" rel="noreferrer">
+                  <span class="contact-icon" aria-hidden="true">
+                    <svg><use href="#icon-instagram"></use></svg>
+                  </span>
+                  <span class="contact-info">
+                    <span>Instagram</span>
+                    <strong>@csj.pl</strong>
+                  </span>
+                </a>
+                <a href="https://www.facebook.com/search/top?q=Carl%20Stephen%20Jr" target="_blank" rel="noreferrer">
+                  <span class="contact-icon" aria-hidden="true">
+                    <svg><use href="#icon-facebook"></use></svg>
+                  </span>
+                  <span class="contact-info">
+                    <span>Facebook</span>
+                    <strong>Carl Stephen Jr</strong>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <form class="contact-form reveal" data-contact-form novalidate>
+              <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio" />
+              <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" />
+
+              <div class="form-row">
+                <label>
+                  <span>Nom complet</span>
+                  <input type="text" name="name" autocomplete="name" placeholder="Votre nom" required />
+                  <small data-error-for="name"></small>
+                </label>
+                <label>
+                  <span>Email</span>
+                  <input type="email" name="email" autocomplete="email" placeholder="vous@exemple.com" required />
+                  <small data-error-for="email"></small>
+                </label>
+              </div>
+
+              <div class="form-row">
+                <label>
+                  <span>Téléphone</span>
+                  <input type="tel" name="phone" autocomplete="tel" placeholder="+509..." />
+                  <small data-error-for="phone"></small>
+                </label>
+                <label>
+                  <span>Type de projet</span>
+                  <select name="projectType" required>
+                    <option value="">Sélectionner</option>
+                    <option>Site vitrine</option>
+                    <option>Application web</option>
+                    <option>API / backend</option>
+                    <option>Maintenance</option>
+                    <option>Autre</option>
+                  </select>
+                  <small data-error-for="projectType"></small>
+                </label>
+              </div>
+
+              <label>
+                <span>Budget indicatif</span>
+                <select name="budget" required>
+                  <option value="">Sélectionner</option>
+                  <option>Moins de 1 000 USD</option>
+                  <option>1 000 - 3 000 USD</option>
+                  <option>3 000 - 7 000 USD</option>
+                  <option>Plus de 7 000 USD</option>
+                  <option>À définir ensemble</option>
+                </select>
+                <small data-error-for="budget"></small>
+              </label>
+
+              <label>
+                <span>Message</span>
+                <textarea
+                  name="message"
+                  rows="6"
+                  placeholder="Décrivez votre besoin, vos objectifs, vos délais et les liens utiles."
+                  required
+                ></textarea>
+                <small data-error-for="message"></small>
+              </label>
+
+              <button class="btn btn-primary form-submit" type="submit">
+                Envoyer le message
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M22 2 11 13" />
+                  <path d="m22 2-7 20-4-9-9-4Z" />
+                </svg>
+              </button>
+              <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-inner">
+          <p>
+            © <span data-year></span> stephen.dev, Tous droits réservés.
+          </p>
+          <div class="footer-socials" aria-label="Réseaux sociaux">
+            <a href="https://github.com/csjpl19" target="_blank" rel="noreferrer" aria-label="GitHub">
+              <svg aria-hidden="true"><use href="#icon-github"></use></svg>
+            </a>
+            <a href="https://www.instagram.com/csj.pl" target="_blank" rel="noreferrer" aria-label="Instagram">
+              <svg aria-hidden="true"><use href="#icon-instagram"></use></svg>
+            </a>
+            <a href="https://wa.me/50934976307" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+              <svg aria-hidden="true"><use href="#icon-phone-chat"></use></svg>
+            </a>
+            <a href="https://www.facebook.com/search/top?q=Carl%20Stephen%20Jr" target="_blank" rel="noreferrer" aria-label="Facebook">
+              <svg aria-hidden="true"><use href="#icon-facebook"></use></svg>
+            </a>
+            <a data-email-link href="mailto:spierrelouis45@gmail.com" aria-label="Email">
+              <svg aria-hidden="true"><use href="#icon-mail"></use></svg>
+            </a>
+          </div>
+        </div>
+      </footer>
+
+      <button class="back-to-top" type="button" data-back-to-top aria-label="Retour en haut">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="m18 15-6-6-6 6" />
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>
