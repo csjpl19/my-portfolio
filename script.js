@@ -292,11 +292,6 @@ function validateForm(form) {
 
   if (!String(data.name || "").trim()) errors.name = "Votre nom est requis.";
   if (!emailRegex.test(String(data.email || ""))) errors.email = "Email invalide.";
-  if (!String(data.projectType || "").trim()) errors.projectType = "Sélectionnez un type.";
-  if (!String(data.budget || "").trim()) errors.budget = "Sélectionnez un budget.";
-  if (String(data.phone || "").trim() && String(data.phone).replace(/[^\d+]/g, "").length < 7) {
-    errors.phone = "Téléphone trop court.";
-  }
   if (String(data.message || "").trim().length < 20) {
     errors.message = "Détaillez votre besoin en au moins 20 caractères.";
   }
@@ -306,14 +301,11 @@ function validateForm(form) {
 }
 
 function buildMailto(data) {
-  const subject = encodeURIComponent(`Nouveau projet - ${data.projectType || "Portfolio"}`);
+  const subject = encodeURIComponent("Nouveau message depuis le portfolio");
   const body = encodeURIComponent(
     [
       `Nom: ${data.name}`,
       `Email: ${data.email}`,
-      `Téléphone: ${data.phone || "Non précisé"}`,
-      `Type de projet: ${data.projectType}`,
-      `Budget: ${data.budget}`,
       "",
       "Message:",
       data.message,
@@ -326,11 +318,8 @@ async function sendWithFormSubmit(data) {
   const payload = {
     name: data.name,
     email: data.email,
-    telephone: data.phone,
-    type_de_projet: data.projectType,
-    budget: data.budget,
     message: data.message,
-    _subject: `Nouveau projet depuis le portfolio - ${data.projectType}`,
+    _subject: "Nouveau message depuis le portfolio",
     _template: "table",
   };
 
