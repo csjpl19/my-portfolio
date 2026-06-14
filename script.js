@@ -232,7 +232,7 @@ function setupParticles() {
 
       context.beginPath();
       context.arc(particle.x, particle.y, particle.r, 0, Math.PI * 2);
-      context.fillStyle = "rgba(208, 233, 255, 0.58)";
+      context.fillStyle = "rgba(221, 231, 226, 0.46)";
       context.fill();
     }
 
@@ -246,7 +246,7 @@ function setupParticles() {
         const distance = Math.sqrt(dx * dx + dy * dy);
 
         if (distance < maxDistance) {
-          context.strokeStyle = `rgba(56, 214, 230, ${(1 - distance / maxDistance) * 0.16})`;
+          context.strokeStyle = `rgba(159, 208, 194, ${(1 - distance / maxDistance) * 0.14})`;
           context.lineWidth = 0.7;
           context.beginPath();
           context.moveTo(a.x, a.y);
